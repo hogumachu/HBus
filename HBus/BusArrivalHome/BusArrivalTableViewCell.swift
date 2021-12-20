@@ -3,6 +3,8 @@ import UIKit
 class BusArrivalTableViewCell: UITableViewCell {
     static let identifier = "BusArrivalTableViewCellIdentifier"
     
+    // MARK: - Properties
+    
     private let backgroundWrapView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -86,6 +88,9 @@ class BusArrivalTableViewCell: UITableViewCell {
         label.textColor = .systemOrange
         return label
     }()
+    
+    // MARK: - Lifecycle
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureUI()
@@ -98,6 +103,8 @@ class BusArrivalTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
     }
+    
+    // MARK: - Configure
     
     private func configureUI() {
         backgroundColor = .systemGray4

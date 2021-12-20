@@ -3,6 +3,8 @@ import UIKit
 class BusRouteTableViewCell: UITableViewCell {
     static let identifier = "BusRouteTableViewCellIdentifier"
     
+    // MARK: - Properties
+    
     private let backgroundWrapView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -26,6 +28,8 @@ class BusRouteTableViewCell: UITableViewCell {
         return label
     }()
     
+    // MARK: - Lifecycle
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureUI()
@@ -34,6 +38,8 @@ class BusRouteTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Configure
     
     private func configureUI() {
         backgroundColor = .systemGray4

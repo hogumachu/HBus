@@ -4,8 +4,6 @@ class BusRouteAPI {
     static let shared = BusRouteAPI()
     private init() {}
     
-    // 노선 번호 목록 조회
-    
     func getBusRouteList(routeName: String, completion: @escaping (Result<[BusRoute], Error>) -> ()) {
         DispatchQueue.global().async {
             let urlString = "http://apis.data.go.kr/6410000/busrouteservice/getBusRouteList?serviceKey=\(_serviceKey)&keyword=\(routeName)"

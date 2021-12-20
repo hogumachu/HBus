@@ -5,11 +5,15 @@ import RxDataSources
 typealias BusRouteStationSectionModel = AnimatableSectionModel<Int, BusRouteStation>
 
 class BusRouteStationViewModel {
+    // MARK: - Dependency
+    
     struct Dependency {
         let busRoute: BusRoute
     }
     
     let busRoute: BusRoute
+    
+    // MARK: - Properties
     
     private var busRouteStations: [BusRouteStation] = []
     var busLocations = BehaviorSubject<[BusLocation]>(value: [])
@@ -32,9 +36,13 @@ class BusRouteStationViewModel {
         return ds
     }()
     
+    // MARK: - Initialize
+    
     init(dependency: Dependency) {
         self.busRoute = dependency.busRoute
     }
+    
+    // MARK: - Methods
     
     func searchBusStationList() {
         BusRouteAPI.shared.getBusRouteStationList(routeID: busRoute.routeID) { [weak self] result in

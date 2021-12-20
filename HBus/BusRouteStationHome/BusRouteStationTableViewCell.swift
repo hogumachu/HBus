@@ -4,8 +4,9 @@ import SnapKit
 class BusRouteStationTableViewCell: UITableViewCell {
     static let identifier = "BusRouteStationTableViewCellIdentifier"
     
-    private var isBus = false
+    // MARK: - Properties
     
+    private var isBus = false
     private let backgroundWrapView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -69,6 +70,8 @@ class BusRouteStationTableViewCell: UITableViewCell {
         return imageView
     }()
     
+    // MARK: - Lifecycle
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureUI()
@@ -83,6 +86,8 @@ class BusRouteStationTableViewCell: UITableViewCell {
         backgroundColor = .systemGray4
         setBus(false)
     }
+    
+    // MARK: - Configure
     
     private func configureUI() {
         backgroundColor = .systemGray4
@@ -152,7 +157,6 @@ class BusRouteStationTableViewCell: UITableViewCell {
             }
         }
     }
-    
     
     func setItem(item: BusRouteStation) {
         stationNameLabel.text = item.stationName
