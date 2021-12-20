@@ -18,6 +18,12 @@ class BusRouteViewController: UIViewController {
     // MARK: - Properties
     
     private let disposeBag = DisposeBag()
+    private let indicatorView: UIActivityIndicatorView = {
+        let indicatorView = UIActivityIndicatorView()
+        indicatorView.translatesAutoresizingMaskIntoConstraints = false
+        indicatorView.isHidden = true
+        return indicatorView
+    }()
     private let routeSearchTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
@@ -59,6 +65,7 @@ class BusRouteViewController: UIViewController {
         
         view.addSubview(routeSearchTextField)
         view.addSubview(routeTableView)
+        view.addSubview(indicatorView)
         
         routeSearchTextField.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
@@ -70,6 +77,10 @@ class BusRouteViewController: UIViewController {
         routeTableView.snp.makeConstraints {
             $0.top.equalTo(routeSearchTextField.snp.bottom)
             $0.leading.trailing.bottom.equalTo(view.safeAreaLayoutGuide)
+        }
+        
+        indicatorView.snp.makeConstraints {
+            $0.center.equalTo(routeTableView)
         }
     }
     
@@ -112,5 +123,27 @@ class BusRouteViewController: UIViewController {
                 }
             )
             .disposed(by: disposeBag)
+        
+        viewModel.loadingObservable
+            .asDriver(onErrorJustReturn: false)
+            .drive(
+                with: self,
+                onNext: { vc, isLoading in
+                    isLoading ? vc.startLoading() : vc.stopLoading()
+                }
+            )
+            .disposed(by: disposeBag)
+    }
+    
+    // MARK: - Helper
+    
+    private func startLoading() {
+        indicatorView.isHidden = false
+        indicatorView.startAnimating()
+    }
+    
+    private func stopLoading() {
+        indicatorView.stopAnimating()
+        indicatorView.isHidden = true
     }
 }
