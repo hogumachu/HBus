@@ -9,14 +9,41 @@
 /* Begin PBXBuildFile section */
 		F1061CC1277067710093083B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CC0277067710093083B /* AppDelegate.swift */; };
 		F1061CC3277067710093083B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CC2277067710093083B /* SceneDelegate.swift */; };
-		F1061CC5277067710093083B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CC4277067710093083B /* ViewController.swift */; };
-		F1061CC8277067710093083B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1061CC6277067710093083B /* Main.storyboard */; };
 		F1061CCA277067730093083B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1061CC9277067730093083B /* Assets.xcassets */; };
 		F1061CCD277067730093083B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1061CCB277067730093083B /* LaunchScreen.storyboard */; };
 		F1061CD8277067740093083B /* HBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CD7277067740093083B /* HBusTests.swift */; };
 		F1061CE2277067740093083B /* HBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CE1277067740093083B /* HBusUITests.swift */; };
 		F1061CE4277067740093083B /* HBusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CE3277067740093083B /* HBusUITestsLaunchTests.swift */; };
 		F1061CF2277068080093083B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061CF1277068080093083B /* Key.swift */; };
+		F1061CFB277068880093083B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F1061CFA277068880093083B /* RxCocoa */; };
+		F1061CFD277068880093083B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F1061CFC277068880093083B /* RxSwift */; };
+		F1061D00277068930093083B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1061CFF277068930093083B /* SnapKit */; };
+		F1061D03277068AB0093083B /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = F1061D02277068AB0093083B /* RxDataSources */; };
+		F1061D082770696B0093083B /* BusArrivalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D072770696B0093083B /* BusArrivalViewController.swift */; };
+		F1061D0A277069710093083B /* BusArrivalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D09277069710093083B /* BusArrivalViewModel.swift */; };
+		F1061D0C2770697A0093083B /* BusArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D0B2770697A0093083B /* BusArrivalTableViewCell.swift */; };
+		F1061D0E277069840093083B /* BusRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D0D277069840093083B /* BusRouteViewController.swift */; };
+		F1061D102770698E0093083B /* BusRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D0F2770698E0093083B /* BusRouteViewModel.swift */; };
+		F1061D12277069940093083B /* BusRouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D11277069940093083B /* BusRouteTableViewCell.swift */; };
+		F1061D14277069A50093083B /* BusRouteStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D13277069A50093083B /* BusRouteStationViewController.swift */; };
+		F1061D16277069AC0093083B /* BusRouteStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D15277069AC0093083B /* BusRouteStationViewModel.swift */; };
+		F1061D18277069B60093083B /* BusRouteStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D17277069B60093083B /* BusRouteStationTableViewCell.swift */; };
+		F1061D1A277069FC0093083B /* BusRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D19277069FC0093083B /* BusRoute.swift */; };
+		F1061D1C27706A070093083B /* BusRouteStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D1B27706A070093083B /* BusRouteStation.swift */; };
+		F1061D1E27706A130093083B /* BusLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D1D27706A130093083B /* BusLocation.swift */; };
+		F1061D2027706A1F0093083B /* BusArrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D1F27706A1F0093083B /* BusArrival.swift */; };
+		F1061D2227706A290093083B /* BusArrivalName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2127706A290093083B /* BusArrivalName.swift */; };
+		F1061D2427706A420093083B /* BusRouteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2327706A420093083B /* BusRouteAPI.swift */; };
+		F1061D2627706A520093083B /* BusArrivalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2527706A520093083B /* BusArrivalAPI.swift */; };
+		F1061D2827706A6C0093083B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2727706A6C0093083B /* Coordinator.swift */; };
+		F1061D2A27706A9D0093083B /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2927706A9D0093083B /* Composition.swift */; };
+		F1061D2C27706ABE0093083B /* BusRouteXMLParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2B27706ABE0093083B /* BusRouteXMLParseHelper.swift */; };
+		F1061D2E27706AD30093083B /* BusRouteStationXMLParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2D27706AD30093083B /* BusRouteStationXMLParseHelper.swift */; };
+		F1061D3027706ADE0093083B /* BusLocationXMLParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D2F27706ADE0093083B /* BusLocationXMLParseHelper.swift */; };
+		F1061D3227706AF20093083B /* BusRouteInfoXMLParseHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D3127706AF20093083B /* BusRouteInfoXMLParseHepler.swift */; };
+		F1061D3427706C020093083B /* BusArrivalXMLParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D3327706C020093083B /* BusArrivalXMLParseHelper.swift */; };
+		F1061D3627706C0C0093083B /* XMLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1061D3527706C0C0093083B /* XMLError.swift */; };
+		F1061D3927706E4B0093083B /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = F1061D3827706E4B0093083B /* RxKeyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +67,6 @@
 		F1061CBD277067710093083B /* HBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1061CC0277067710093083B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1061CC2277067710093083B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1061CC4277067710093083B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1061CC7277067710093083B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1061CC9277067730093083B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1061CCC277067730093083B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1061CCE277067740093083B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +76,30 @@
 		F1061CE1277067740093083B /* HBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBusUITests.swift; sourceTree = "<group>"; };
 		F1061CE3277067740093083B /* HBusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F1061CF1277068080093083B /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		F1061D072770696B0093083B /* BusArrivalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalViewController.swift; sourceTree = "<group>"; };
+		F1061D09277069710093083B /* BusArrivalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalViewModel.swift; sourceTree = "<group>"; };
+		F1061D0B2770697A0093083B /* BusArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalTableViewCell.swift; sourceTree = "<group>"; };
+		F1061D0D277069840093083B /* BusRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteViewController.swift; sourceTree = "<group>"; };
+		F1061D0F2770698E0093083B /* BusRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteViewModel.swift; sourceTree = "<group>"; };
+		F1061D11277069940093083B /* BusRouteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteTableViewCell.swift; sourceTree = "<group>"; };
+		F1061D13277069A50093083B /* BusRouteStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteStationViewController.swift; sourceTree = "<group>"; };
+		F1061D15277069AC0093083B /* BusRouteStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteStationViewModel.swift; sourceTree = "<group>"; };
+		F1061D17277069B60093083B /* BusRouteStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteStationTableViewCell.swift; sourceTree = "<group>"; };
+		F1061D19277069FC0093083B /* BusRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRoute.swift; sourceTree = "<group>"; };
+		F1061D1B27706A070093083B /* BusRouteStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteStation.swift; sourceTree = "<group>"; };
+		F1061D1D27706A130093083B /* BusLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLocation.swift; sourceTree = "<group>"; };
+		F1061D1F27706A1F0093083B /* BusArrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrival.swift; sourceTree = "<group>"; };
+		F1061D2127706A290093083B /* BusArrivalName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalName.swift; sourceTree = "<group>"; };
+		F1061D2327706A420093083B /* BusRouteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteAPI.swift; sourceTree = "<group>"; };
+		F1061D2527706A520093083B /* BusArrivalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalAPI.swift; sourceTree = "<group>"; };
+		F1061D2727706A6C0093083B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F1061D2927706A9D0093083B /* Composition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition.swift; sourceTree = "<group>"; };
+		F1061D2B27706ABE0093083B /* BusRouteXMLParseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteXMLParseHelper.swift; sourceTree = "<group>"; };
+		F1061D2D27706AD30093083B /* BusRouteStationXMLParseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteStationXMLParseHelper.swift; sourceTree = "<group>"; };
+		F1061D2F27706ADE0093083B /* BusLocationXMLParseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLocationXMLParseHelper.swift; sourceTree = "<group>"; };
+		F1061D3127706AF20093083B /* BusRouteInfoXMLParseHepler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteInfoXMLParseHepler.swift; sourceTree = "<group>"; };
+		F1061D3327706C020093083B /* BusArrivalXMLParseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalXMLParseHelper.swift; sourceTree = "<group>"; };
+		F1061D3527706C0C0093083B /* XMLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1061D00277068930093083B /* SnapKit in Frameworks */,
+				F1061D03277068AB0093083B /* RxDataSources in Frameworks */,
+				F1061CFD277068880093083B /* RxSwift in Frameworks */,
+				F1061CFB277068880093083B /* RxCocoa in Frameworks */,
+				F1061D3927706E4B0093083B /* RxKeyboard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +155,16 @@
 		F1061CBF277067710093083B /* HBus */ = {
 			isa = PBXGroup;
 			children = (
+				F1061D05277069240093083B /* BusArrivalHome */,
+				F1061D042770691B0093083B /* BusRouteHome */,
+				F1061D06277069290093083B /* BusRouteStationHome */,
+				F1061CF82770685F0093083B /* Model */,
+				F1061CF72770685A0093083B /* Service */,
+				F1061CF6277068560093083B /* Coordinator */,
+				F1061CF5277068510093083B /* DI */,
 				F1061CF0277067FA0093083B /* Key */,
-				F1061CC0277067710093083B /* AppDelegate.swift */,
-				F1061CC2277067710093083B /* SceneDelegate.swift */,
-				F1061CC4277067710093083B /* ViewController.swift */,
-				F1061CC6277067710093083B /* Main.storyboard */,
-				F1061CC9277067730093083B /* Assets.xcassets */,
-				F1061CCB277067730093083B /* LaunchScreen.storyboard */,
+				F1061CF4277068450093083B /* XMLParser */,
+				F1061CF32770683D0093083B /* SupportingFiles */,
 				F1061CCE277067740093083B /* Info.plist */,
 			);
 			path = HBus;
@@ -138,6 +195,97 @@
 			path = Key;
 			sourceTree = "<group>";
 		};
+		F1061CF32770683D0093083B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F1061CC0277067710093083B /* AppDelegate.swift */,
+				F1061CC2277067710093083B /* SceneDelegate.swift */,
+				F1061CC9277067730093083B /* Assets.xcassets */,
+				F1061CCB277067730093083B /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F1061CF4277068450093083B /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D2B27706ABE0093083B /* BusRouteXMLParseHelper.swift */,
+				F1061D2D27706AD30093083B /* BusRouteStationXMLParseHelper.swift */,
+				F1061D2F27706ADE0093083B /* BusLocationXMLParseHelper.swift */,
+				F1061D3127706AF20093083B /* BusRouteInfoXMLParseHepler.swift */,
+				F1061D3327706C020093083B /* BusArrivalXMLParseHelper.swift */,
+				F1061D3527706C0C0093083B /* XMLError.swift */,
+			);
+			path = XMLParser;
+			sourceTree = "<group>";
+		};
+		F1061CF5277068510093083B /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D2927706A9D0093083B /* Composition.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		F1061CF6277068560093083B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D2727706A6C0093083B /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F1061CF72770685A0093083B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D2327706A420093083B /* BusRouteAPI.swift */,
+				F1061D2527706A520093083B /* BusArrivalAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F1061CF82770685F0093083B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D19277069FC0093083B /* BusRoute.swift */,
+				F1061D1B27706A070093083B /* BusRouteStation.swift */,
+				F1061D1D27706A130093083B /* BusLocation.swift */,
+				F1061D1F27706A1F0093083B /* BusArrival.swift */,
+				F1061D2127706A290093083B /* BusArrivalName.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1061D042770691B0093083B /* BusRouteHome */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D0D277069840093083B /* BusRouteViewController.swift */,
+				F1061D0F2770698E0093083B /* BusRouteViewModel.swift */,
+				F1061D11277069940093083B /* BusRouteTableViewCell.swift */,
+			);
+			path = BusRouteHome;
+			sourceTree = "<group>";
+		};
+		F1061D05277069240093083B /* BusArrivalHome */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D072770696B0093083B /* BusArrivalViewController.swift */,
+				F1061D09277069710093083B /* BusArrivalViewModel.swift */,
+				F1061D0B2770697A0093083B /* BusArrivalTableViewCell.swift */,
+			);
+			path = BusArrivalHome;
+			sourceTree = "<group>";
+		};
+		F1061D06277069290093083B /* BusRouteStationHome */ = {
+			isa = PBXGroup;
+			children = (
+				F1061D13277069A50093083B /* BusRouteStationViewController.swift */,
+				F1061D15277069AC0093083B /* BusRouteStationViewModel.swift */,
+				F1061D17277069B60093083B /* BusRouteStationTableViewCell.swift */,
+			);
+			path = BusRouteStationHome;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +302,13 @@
 			dependencies = (
 			);
 			name = HBus;
+			packageProductDependencies = (
+				F1061CFA277068880093083B /* RxCocoa */,
+				F1061CFC277068880093083B /* RxSwift */,
+				F1061CFF277068930093083B /* SnapKit */,
+				F1061D02277068AB0093083B /* RxDataSources */,
+				F1061D3827706E4B0093083B /* RxKeyboard */,
+			);
 			productName = HBus;
 			productReference = F1061CBD277067710093083B /* HBus.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +381,12 @@
 				Base,
 			);
 			mainGroup = F1061CB4277067710093083B;
+			packageReferences = (
+				F1061CF9277068880093083B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F1061CFE277068930093083B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F1061D01277068AB0093083B /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				F1061D3727706E4B0093083B /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+			);
 			productRefGroup = F1061CBE277067710093083B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,7 +405,6 @@
 			files = (
 				F1061CCD277067730093083B /* LaunchScreen.storyboard in Resources */,
 				F1061CCA277067730093083B /* Assets.xcassets in Resources */,
-				F1061CC8277067710093083B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +429,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1061CC5277067710093083B /* ViewController.swift in Sources */,
 				F1061CF2277068080093083B /* Key.swift in Sources */,
+				F1061D3227706AF20093083B /* BusRouteInfoXMLParseHepler.swift in Sources */,
 				F1061CC1277067710093083B /* AppDelegate.swift in Sources */,
+				F1061D0C2770697A0093083B /* BusArrivalTableViewCell.swift in Sources */,
 				F1061CC3277067710093083B /* SceneDelegate.swift in Sources */,
+				F1061D2C27706ABE0093083B /* BusRouteXMLParseHelper.swift in Sources */,
+				F1061D16277069AC0093083B /* BusRouteStationViewModel.swift in Sources */,
+				F1061D0A277069710093083B /* BusArrivalViewModel.swift in Sources */,
+				F1061D2227706A290093083B /* BusArrivalName.swift in Sources */,
+				F1061D2027706A1F0093083B /* BusArrival.swift in Sources */,
+				F1061D3027706ADE0093083B /* BusLocationXMLParseHelper.swift in Sources */,
+				F1061D0E277069840093083B /* BusRouteViewController.swift in Sources */,
+				F1061D14277069A50093083B /* BusRouteStationViewController.swift in Sources */,
+				F1061D12277069940093083B /* BusRouteTableViewCell.swift in Sources */,
+				F1061D082770696B0093083B /* BusArrivalViewController.swift in Sources */,
+				F1061D2827706A6C0093083B /* Coordinator.swift in Sources */,
+				F1061D2627706A520093083B /* BusArrivalAPI.swift in Sources */,
+				F1061D2E27706AD30093083B /* BusRouteStationXMLParseHelper.swift in Sources */,
+				F1061D1A277069FC0093083B /* BusRoute.swift in Sources */,
+				F1061D3627706C0C0093083B /* XMLError.swift in Sources */,
+				F1061D2A27706A9D0093083B /* Composition.swift in Sources */,
+				F1061D1C27706A070093083B /* BusRouteStation.swift in Sources */,
+				F1061D1E27706A130093083B /* BusLocation.swift in Sources */,
+				F1061D102770698E0093083B /* BusRouteViewModel.swift in Sources */,
+				F1061D18277069B60093083B /* BusRouteStationTableViewCell.swift in Sources */,
+				F1061D3427706C020093083B /* BusArrivalXMLParseHelper.swift in Sources */,
+				F1061D2427706A420093083B /* BusRouteAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +492,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1061CC6277067710093083B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1061CC7277067710093083B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1061CCB277067730093083B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -616,6 +791,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1061CF9277068880093083B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F1061CFE277068930093083B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		F1061D01277068AB0093083B /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F1061D3727706E4B0093083B /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1061CFA277068880093083B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1061CF9277068880093083B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F1061CFC277068880093083B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1061CF9277068880093083B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F1061CFF277068930093083B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1061CFE277068930093083B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F1061D02277068AB0093083B /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1061D01277068AB0093083B /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		F1061D3827706E4B0093083B /* RxKeyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1061D3727706E4B0093083B /* XCRemoteSwiftPackageReference "RxKeyboard" */;
+			productName = RxKeyboard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1061CB5277067710093083B /* Project object */;
 }
