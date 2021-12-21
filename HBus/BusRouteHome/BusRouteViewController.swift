@@ -92,7 +92,8 @@ class BusRouteViewController: UIViewController {
             .disposed(by: disposeBag)
         
         routeTableView.rx.itemSelected
-            .bind(
+            .asDriver()
+            .drive(
                 with: self,
                 onNext: { vc, indexPath in
                     vc.routeTableView.deselectRow(at: indexPath, animated: true)

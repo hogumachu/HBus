@@ -82,13 +82,14 @@ class BusArrivalViewController: UIViewController {
                 onNext: { vc, item in
                     vc.viewModel.getBusRoute(item: item.busArrival) { busRoute in
                         if let busRoute = busRoute {
-                            vc.coordinator.busRouteStationVC(busRoute: busRoute, animated: true)
+                            DispatchQueue.main.async {
+                                vc.coordinator.busRouteStationVC(busRoute: busRoute, animated: true)
+                            }
                         }
                     }
                 }
             )
             .disposed(by: disposeBag)
-        
     }
     
     // MARK: - Helper
