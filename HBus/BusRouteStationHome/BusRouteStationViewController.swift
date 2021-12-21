@@ -47,7 +47,6 @@ class BusRouteStationViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.searchBusStationList()
         viewModel.loadBusLocationList()
         setTimer()
     }
@@ -73,6 +72,7 @@ class BusRouteStationViewController: UIViewController {
     // MARK: - Bind
     
     private func bind() {
+        viewModel.searchBusStationList()
         viewModel.busRouteStationList
             .bind(to: stationTableView.rx.items(dataSource: viewModel.dataSource))
             .disposed(by: disposeBag)
