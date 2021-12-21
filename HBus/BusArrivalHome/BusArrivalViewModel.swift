@@ -51,7 +51,7 @@ class BusArrivalViewModel {
                 self?.busArrivals = busArrivalArr
                     .map { busArrival in
                         var busArrivalName = BusArrivalName(busArrival: busArrival, routeName: "-")
-                        if let routeName = self?.busRoutes.first(where: { $0.routeID == busArrival.routeID })?.routeName {
+                        if let routeName = self?.busRoutes.first(where: { $0.routeID == busArrival.routeID })?.routeName, routeName != "-" {
                             busArrivalName.routeName = routeName
                         } else {
                             self?.getBusRoute(item: busArrival, completion: { busRoute in
