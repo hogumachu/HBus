@@ -31,8 +31,6 @@ class BusRouteStationXMLParseHelper: NSObject, XMLParserDelegate {
             xmlElementName = .stationSeq
         case BusRouteStationXMLElementName.stationName.rawValue:
             xmlElementName = .stationName
-//        case BusRouteStationXMLElementName.mobileNo.rawValue:
-//            xmlElementName = .mobileNo
         case BusRouteStationXMLElementName.regionName.rawValue:
             xmlElementName = .regionName
         case BusRouteStationXMLElementName.districtCd.rawValue:
@@ -65,7 +63,7 @@ class BusRouteStationXMLParseHelper: NSObject, XMLParserDelegate {
                   let regionName = xmlDictionary[BusRouteStationXMLElementName.regionName.rawValue],
                   let districtCd = xmlDictionary[BusRouteStationXMLElementName.districtCd.rawValue],
                   let centerYn = xmlDictionary[BusRouteStationXMLElementName.centerYn.rawValue],
-                  let turnYn = xmlDictionary[BusRouteStationXMLElementName.turnYn.rawValue]else {
+                  let turnYn = xmlDictionary[BusRouteStationXMLElementName.turnYn.rawValue] else {
                       return
                   }
             

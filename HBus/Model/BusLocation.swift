@@ -1,5 +1,3 @@
-import RxDataSources
-
 struct BusLocation {
     let routeID: String // 노선 아이디
     let stationID: String // 정류소 아이디

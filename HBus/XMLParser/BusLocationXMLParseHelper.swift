@@ -66,7 +66,7 @@ class BusLocationXMLParseHelper: NSObject, XMLParserDelegate {
                   let lowPlate = xmlDictionary[BusLocationXMLElementName.lowPlate.rawValue],
                   let plateNo = xmlDictionary[BusLocationXMLElementName.plateNo.rawValue],
                   let plateType = xmlDictionary[BusLocationXMLElementName.plateType.rawValue],
-                  let remainSeatCnt = xmlDictionary[BusLocationXMLElementName.remainSeatCnt.rawValue]else {
+                  let remainSeatCnt = xmlDictionary[BusLocationXMLElementName.remainSeatCnt.rawValue] else {
                       return
                   }
             

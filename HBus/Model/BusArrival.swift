@@ -20,8 +20,6 @@ struct BusArrival: IdentifiableType, Equatable  {
     let remainSeatCnt2: String // 두번째차량 빈자리 수
     let staOrder: String // 정류소 순번
     let flag: String // 상태 구분 (RUN: 운행중, PASS: 운행중, STOP: 운행종료, WAIT: 회차지대기)
-    
-    
 }
 
 extension BusArrival {

@@ -24,6 +24,8 @@ class Coordinator {
     }
 }
 
+// MARK: - Scene Transition
+
 extension Coordinator {
     func start(window: UIWindow) {
         let routeVC = busRouteViewControllerFactory(.init(coordinator: self , viewModel: .init()))

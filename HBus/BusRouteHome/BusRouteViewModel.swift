@@ -5,6 +5,8 @@ import RxDataSources
 typealias BusRouteSectionModel = AnimatableSectionModel<String, BusRoute>
 
 class BusRouteViewModel {
+    // MARK: - Properties
+    
     private var busRoutes: [BusRoute] = []
     var busRouteList = BehaviorSubject<[BusRouteSectionModel]>(value: [])
     private var loading: Bool = false
@@ -18,6 +20,8 @@ class BusRouteViewModel {
         }
         return ds
     }()
+    
+    // MARK: - Methods
     
     func searchBusRoute(routeName: String) {
         if routeName.isEmpty || loading {

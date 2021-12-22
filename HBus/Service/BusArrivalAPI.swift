@@ -5,7 +5,7 @@ class BusArrivalAPI {
     private init() {}
     
     func getBusArrivalList(stationID: String, completion: @escaping (Result<[BusArrival], Error>) ->()) {
-        DispatchQueue.global().async {
+        DispatchQueue(label: "getBusArrivalList").async {
             let urlString = "http://apis.data.go.kr/6410000/busarrivalservice/getBusArrivalList?serviceKey=\(_serviceKey)&stationId=\(stationID)"
             let url = URL(string: urlString)!
             
